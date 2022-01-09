@@ -1,4 +1,4 @@
-                                          **3commas BotAssistant Discord Bot**
+                                                           **3commas BotAssistant Discord Bot**
 Updates a 3Commas composite bot's pairs based on lunarcrush's altrank and galaxy scores directly through discord commands. Use $help to see the possible commands.
 
 Create a new C# console program and add XCommas.Net and Discord.Net nuget package and paste all the files into project directory.
