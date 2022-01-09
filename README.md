@@ -16,7 +16,7 @@ Update 3commas key, 3Commas secret, Discord channel id, Discord server id, Disco
 • **$run:** Refresh Bot Assistant: $run
 
 
-By default it runs every 2 min you can update that according to your needs.
+By default it runs every 5 min you can update that according to your needs.
 
 Credits to https://github.com/jay23606
 
