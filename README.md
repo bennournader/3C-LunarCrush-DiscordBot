@@ -10,7 +10,9 @@ Update 3commas key, 3Commas secret, Discord channel id, Discord server id, Disco
  $addBA {AccountID} {BotID} {max_altrank} {max_galaxyscore} {market: binance/ftx} {baseType: ETH/USDT/USD} {futures true or false} 
  
 • **$removeBA:** Removes a bot fom Bot Assistant: $removeBA {BotID} 
+
 • **$clear:** Clears discord channel chat: $clear {number of messages to delete} 
+
 • **$run:** Refresh Bot Assistant: $run
 
 
