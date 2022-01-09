@@ -4,13 +4,14 @@ Create a new C# console program and add XCommas.Net and Discord.Net nuget packag
 
 Update 3commas key, 3Commas secret, Discord channel id, Discord server id, Discord token variables.
 
-Useful Commands
-• $addBA: Adds a new bot to Bot Assistant:
+**Useful Commands:**
+
+• **$addBA**: Adds a new bot to Bot Assistant:
  $addBA {AccountID} {BotID} {max_altrank} {max_galaxyscore} {market: binance/ftx} {baseType: ETH/USDT/USD} {futures true or false} 
  
-• $removeBA: Removes a bot fom Bot Assistant: $removeBA {BotID} 
-• $clear: Clears discord channel chat: $clear {number of messages to delete} 
-• $run: Refresh Bot Assistant: $run
+• **$removeBA:** Removes a bot fom Bot Assistant: $removeBA {BotID} 
+• **$clear:** Clears discord channel chat: $clear {number of messages to delete} 
+• **$run:** Refresh Bot Assistant: $run
 
 
 By default it runs every 2 min you can update that according to your needs.
