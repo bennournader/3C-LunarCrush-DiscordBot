@@ -68,7 +68,7 @@ public class Program
             {
                 if (currentBot.getFutures() == true && currentBot.getMarket() == "binance")
                 {
-                    perp = "_USDT";
+                    perp = "USDT";
                 }
                 else if (currentBot.getFutures() == true && currentBot.getMarket() == "ftx")
                 {
