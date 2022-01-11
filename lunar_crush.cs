@@ -15,7 +15,7 @@ using System.Text;
         public double pch { get; set; }
         public long mc { get; set; }
         public double gs { get; set; }
-        public int ss { get; set; }
+        public uint ss { get; set; }
         public double @as { get; set; }
         public int bl { get; set; }
         public int br { get; set; }
@@ -60,7 +60,7 @@ using System.Text;
         public double pch { get; set; }
         public long mc { get; set; }
         public double gs { get; set; }
-        public int ss { get; set; }
+        public uint ss { get; set; }
         public double @as { get; set; }
         public int bl { get; set; }
         public int br { get; set; }
