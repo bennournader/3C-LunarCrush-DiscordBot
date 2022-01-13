@@ -48,9 +48,9 @@ public class Program
             var startTimeSpan = TimeSpan.Zero;
             var periodTimeSpan = TimeSpan.FromMinutes(5); //Runs Bot assistant ever 5 min
 
-            var timer = new System.Threading.Timer((e) =>
+            var timer = new System.Threading.Timer(async (e) =>
             {
-                MainAsync().GetAwaiter().GetResult();
+               await MainAsync();
             }, null, startTimeSpan, periodTimeSpan);
 
             await _client.LoginAsync(TokenType.Bot, token);
@@ -96,7 +96,7 @@ public class Program
                     string discordMessage = "";
                     Console.WriteLine("Adding AltRank pairs...");
                     discordMessage = discordMessage + "━━━━━━> **AltRank** :fire:" + "\n";
-                    LunarCrushRoot res = await GetJSON<LunarCrushRoot>("https://api.lunarcrush.com/v2?data=market&type=fast&sort=acr&limit=1000&key=asdf");
+                    LunarCrushRoot res = await GetJSON<LunarCrushRoot>("https://api.lunarcrush.com/v2?data=market&type=fast&sort=acr&limit=1000&key=asdf");//TODO: update with your key
                     HashSet<string> pairsToUpdate = new HashSet<string>();
                     int idx = 1;
                     foreach (Datum d in res.data)
@@ -121,7 +121,7 @@ public class Program
 
                     //Adding GalaxyScore Pairs
                     discordMessage = discordMessage + "━━━━━━> **GalaxyScore** :flamingo: " + "\n";
-                    res = await GetJSON<LunarCrushRoot>("https://api.lunarcrush.com/v2?data=market&type=fast&sort=gs&limit=1000&key=asdf&desc=True");
+                    res = await GetJSON<LunarCrushRoot>("https://api.lunarcrush.com/v2?data=market&type=fast&sort=gs&limit=1000&key=asdf&desc=True"); //TODO: update with your key
                     idx = 1;
                     foreach (Datum d in res.data)
                     {
